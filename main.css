@@ -1,0 +1,14 @@
+.display-4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10vw;
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar{
+    background-color: steelblue;
+    box-shadow: 0 2px 5px rgb(67, 67, 70) ;
+    border-radius: 0;
+}
