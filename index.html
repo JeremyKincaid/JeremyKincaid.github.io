@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremy's Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link ref="text/css" rel="stylesheet" href="main.css">
 </head>
@@ -20,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
@@ -58,9 +57,8 @@
 
     <div class="container-fluid" id="projects">
         <h3>Projects</h3>
-        <hr>
 
-        <div class="row justify-content-around">
+        <!-- <div class="row justify-content-around">
             <div class="col-lg-3 proDisplay" id="pokedex">
                 <a class="stretched-link" target="blank" href="https://jeremykincaid.github.io/PokeProject/">
                     <h2>Pokedex</h2>
@@ -93,7 +91,89 @@
             <div class="col-lg-3 proDisplay" id="redBadge">
                 <h2>Coming Soon!</h2>
             </div>
-        </div>
+        </div> -->
+        <div id="carouselExampleCaptions" class="carousel slide projectCar" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/kirby.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  projOverlay">
+                    <a class="stretched-link" target="blank" href="https://codepen.io/jeremykincaid/pen/oNxbxeW">
+                        <h2>CSS Kirby</h2>
+                        <p>A hand-waving Kirby made purely with CSS.</p>
+                    </a>
+                </div>
+              </div>
+
+              <div class="carousel-item ">
+                <img src="./assets/pokedex.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  projOverlay">
+                    <a class="stretched-link" target="blank" href="https://jeremykincaid.github.io/PokeProject/">
+                        <h2>Pokedex</h2>
+                        <p>Search for a pokemon and get info about it.</p>
+                    </a>
+                </div>
+              </div>
+
+              <div class="carousel-item ">
+                <img src="./assets/kast.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  projOverlay">
+                    <a class="stretched-link" target="blank" href="https://jeremykincaid.github.io/staticLayout/">
+                        <h2>Static Layout</h2>
+                        <p>A static copy of kastapp.co built from scratch.</p>
+                    </a>
+                </div>
+              </div>
+
+              <div class="carousel-item ">
+                <img src="./assets/air.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  projOverlay">
+                    <a class="stretched-link" target="blank" href="https://airvisualapi.web.app/">
+                        <h2>Air Quality</h2>
+                        <p>Get weather and air pollution information for any location</p>
+                    </a>
+                </div>
+              </div>
+
+              <div class="carousel-item ">
+                <img src="./assets/ballr.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  projOverlay">
+                    <a class="stretched-link" target="blank" href="https://ballrclient.herokuapp.com/">
+                        <h2>Ballr</h2>
+                        <p>Prototype web app for meeting up and playing sports</p>
+                    </a>
+                </div>
+              </div>
+
+              <div class="carousel-item ">
+                <img src="./assets/barbrawl.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  projOverlay">
+                    <a class="stretched-link" target="blank" href="http://bar-brawl.herokuapp.com/">
+                        <h2>Bar Brawl</h2>
+                        <p>Prototype web app where bars can challenge each other and patrons can vote on the winner.</p>
+                    </a>
+                </div>
+              </div>
+
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
 
     <div class="container" id="contact">
@@ -136,11 +216,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </html>

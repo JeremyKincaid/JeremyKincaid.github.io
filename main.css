@@ -81,6 +81,27 @@ a:hover
     border: 1px solid #ecebeb;
 }
 
+.projectCar {
+    box-shadow: 0 0 8px #000000;
+    margin: 2em 8em;
+}
+
+@media (max-width: 992px) {
+    .projectCar {
+        margin: 2em;
+    }
+}
+
+.projOverlay {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+    transition: box-shadow 0.3s;
+}
+
+.projOverlay:hover {
+    box-shadow: 0 0 12px #fff;
+}
+
+
 #pokedex {
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) ), url(assets/pokedex.jpg) no-repeat center center;
     height: 40vh;
